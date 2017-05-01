@@ -16,7 +16,5 @@ Reactを使用することで、ページ遷移を行わないでコンテンツ
 
 
 
-
-[公式サイト](https://facebook.github.io/react/)
-
-[Introduction 02: 前提知識 >>](introduction02_prior_knowledge.md)
+<span style="float: left">[<< 目次](../README.md)</span>
+<span style="float: right">[Introduction 02: 前提知識 >>](introduction02_prior_knowledge.md)</span>
