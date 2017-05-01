@@ -10,7 +10,7 @@ javascriptのライブラリといえば「jQuery」が長年デファクトス�
 
 背景としては、豊かな表現をwebサイトで実装することが多くなってきたことにより、既存「jQuery」で表現することが大変になってきたことにあります。
 <br>Reactを開発している「facebook」だったりなど、iphoneやandroidのネイティブアプリに近い表現を持たせたwebサービスでよく使われており、
-<br>それらを[シングルページアプリケーション（後述）](introduction05_single_page_application.md)といいます。
+<br>それらを[シングルページアプリケーション（後述）](introduction05.md)といいます。
 
 Reactを使用することで、ページ遷移を行わないでコンテンツ内容を変更したり、それをアニメーションで表現したりとwebサイトに豊かな表現を持たせることが簡単になります。
 
@@ -31,4 +31,4 @@ Reactを用いてUIを実装すると、アプリケーションがどのよう�
 
 
 <span align="left">[<< 目次](../README.md)</span>
-<span align="right">[Introduction 02: 前提知識 >>](introduction02_prior_knowledge.md)</span>
+<span align="right">[Introduction 02: Reactを使うために必要な技術 >>](introduction02.md)</span>

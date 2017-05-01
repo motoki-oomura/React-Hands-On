@@ -2,12 +2,12 @@
 
 ## Table Of Contents
 ### 01.Introduction
-- [[WIP] Introduction 01: What is React](01.introduction/introduction01_what_is_react.md)
-- [WIP] Introduction 02: Prior knowledge
+- [Introduction 01: Reactとは](01.introduction/introduction01.md)
+- [Introduction 02: Reactを使うために必要な技術](01.introduction/introduction02.md)
 - [WIP] Introduction 03: Ecmascript2015
 - [WIP] Introduction 04: webpack
 - [WIP] Introduction 05: Single Page Application
-- [WIP] Introduction 06: Debug of React Application
+- [WIP] Introuction 06: Debug of React Application
 
 ### 02.Lesson
 - [WIP] Lesson 00: set up environment
