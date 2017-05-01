@@ -18,7 +18,7 @@ Reactをコーディングする上で使用するes2015の書き方を紹介し
 ### letとconst
 es2015では、`var`を使わず、 `let`または `const`を使うことを推奨してます。
 `let`は再代入が可能な変数を定義し、 `const`は再代入が不可能な変数（定数）を定義します。
-```javascript
+```ecmascript 6
 // es5
 var x = 10;
 console.log(x); // 10
@@ -37,6 +37,25 @@ const z = 10;
 console.log(z);
 
 z = 20 // error
+
+```
+
+### Object Shorthand
+es2015では、Objectのkey名と変数名が同じ場合は、省略記法を使用することができます。
+
+```ecmascript 6
+// es5
+var hoge = 'xyz';
+var obj = {
+  hoge: hoge
+};
+console.log(obj.hoge) // 'xyz'
+
+// es2015
+let fuga = 'abc';
+let obj = { fuga };
+console.log(obj.fuga) // 'xyz'
+
 
 ```
 
