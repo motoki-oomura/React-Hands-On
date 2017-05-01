@@ -16,5 +16,5 @@ Reactを使用することで、ページ遷移を行わないでコンテンツ
 
 
 
-<p style="float: left">[<< 目次](../README.md)</p>
-<p style="float: right">[Introduction 02: 前提知識 >>](introduction02_prior_knowledge.md)</p>
+<span align="left">[<< 目次](../README.md)</span>
+<span align="right">[Introduction 02: 前提知識 >>](introduction02_prior_knowledge.md)</span>
