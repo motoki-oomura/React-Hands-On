@@ -1,4 +1,5 @@
-# Introduction01: Reactとは
+# Introduction01
+## Reactとは
 ReactはFacebookが開発しており、UIに特化した（MVCでいうViewにあたる）javascriptライブラリです。
 <br>近年フロントエンド業界で注目されているライブラリの一つです。
 
