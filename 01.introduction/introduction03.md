@@ -14,6 +14,16 @@ ECMAScript2015とは2015年に新しく仕様が決まったものです。
 
 ## よく使う文法
 Reactをコーディングする上で使用するes2015の書き方を紹介します。
+実際に試しながらコーディングしたほうがいいと思いますので、テストコードを簡単にかけるサイトで試してみてください。
+https://codepen.io/
+
+使い方
+1. Create => NewPen　を押下
+2. Settings => javascript を押下
+3. 「JavaScript Preprocessor」をBabelに変更しCloseをオス
+4. コードを書いてみる
+
+
 
 ### letとconst
 es2015では、`var`を使わず、 `let`または `const`を使うことを推奨してます。

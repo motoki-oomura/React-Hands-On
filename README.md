@@ -4,10 +4,10 @@
 ### 01.Introduction
 - [Introduction 01: Reactとは](01.introduction/introduction01.md)
 - [Introduction 02: Reactを使うために必要な技術](01.introduction/introduction02.md)
-- [WIP] Introduction 03: Ecmascript2015
+- [Introduction 03: ECMAScript2015について](01.introduction/introduction03.md)
 - [WIP] Introduction 04: webpack
 - [WIP] Introduction 05: Single Page Application
-- [WIP] Introuction 06: Debug of React Application
+- [WIP] Introduction 06: Debug of React Application
 
 ### 02.Lesson
 - [WIP] Lesson 00: set up environment
