@@ -59,6 +59,60 @@ console.log(obj.fuga) // 'xyz'
 
 ```
 
+### Destructuring Assignment
+分割代入は、配列とオブジェクトを分解して、要素とプロパティ値をひとつひとつの変数に分解するための構文です。
+
+```ecmascript 6
+// es5
+var obj = {hoge: 'abc', fuga: 'xyz'};
+var hoge = obj.hoge;
+var fuga = obj.fuga;
+
+console.log(hoge); // 'abc'
+console.log(fuga); // 'xyz'
+
+
+// es2015
+const obj = {hoge: 'abc', fuga: 'xyz'};
+const { hoge, fuga } = obj;
+
+console.log(hoge); // 'abc'
+console.log(fuga); // 'xyz'
+
+
+```
+
+
+### Arrow Function
+es2015では関数の新しい書き方でアロー関数というものがあります。
+<br>いままでコールバック関数内で `this`を使いたかった際には、変数に一度代入する必要がありましたが、
+<br>アロー関数ではそれをする必要がありません。
+
+
+```ecmascript 6
+// es5
+var mtself = this;
+setInterval(function(){
+  this.hoge();
+});
+
+// function(引数) {
+// 処理  
+// }
+
+
+// es2015
+setInterval(() => {
+  this.hoge();
+});
+
+// (引数) => { 
+//   処理
+// }
+
+```
+
+
 
 
 ## 参考
