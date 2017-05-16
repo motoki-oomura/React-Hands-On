@@ -138,11 +138,54 @@ setInterval(() => {
 
 ```
 
+### class構文
+いままでjavascriptでは、prototype設計でしたが、es2015ではclass設計でかくことができます。
+
+```ecmascript 6
+//===========================
+// es5
+//===========================
+var Car = function(color){
+  this.color = color;
+}
+Car.prototype = {
+  run: function() {
+    console.log('car is run');  
+  },
+};
+
+var car = new Car('red');
+car.run();
+
+
+//===========================
+// es6
+//===========================
+class Car {
+  constructor(color) {
+    this.color = color;
+  }
+  
+  run() {
+    console.log('car is run');
+  }
+}
+
+const car = new Car('red');
+car.run();
+```
+
+classにはconstructorメソッドが存在し、インスタンス化（new）した際に必ず実行されるメソッドです。
+class設計の場合にはここに初期化処理を入れます。
+
 
 
 
 ## 参考
 - [ECMAScriptとは何か？](https://azu.github.io/slide-what-is-ecmascript/)
+- [ECMAScript 2015 (ES6) まとめ (基本編)](https://garafu.blogspot.jp/2016/06/ecmascript2015-part1.html)
+- [ECMAScript 2015 (ES6) まとめ (クラス編)](https://garafu.blogspot.jp/2016/07/ecmascript2015-part2.html)
+- [ECMAScript 2015 (ES6) まとめ (モジュール編)](https://garafu.blogspot.jp/2016/07/ecmascript2015-part3.html)
 
 <span align="left">[<< Introduction 02: Reactを使うために必要な技術](introduction02.md)</span>
 <span align="right">[Introduction 04: webpackについて >>](introduction04.md)</span>
