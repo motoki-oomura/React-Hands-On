@@ -10,6 +10,8 @@ CSS・javascript・画像などのあらゆるwebコンテンツを「モジュ�
 
 また、webpackではjsだけでなく、CSS・画像・webフォント・動画などあらゆるアセットをモジュールとして扱って１つのバンドルとして出力してくれます。
 
+![webpack](./img/webpack01.png)
+
 ### webpackを使ってみよう
 webpackを使用するためには、まずnpmでwebpackパッケージをインストールします。<br>
 その後webpackパッケージをnode.jsの上で動かします。
