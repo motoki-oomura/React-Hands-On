@@ -37,5 +37,20 @@ $ npm install --save-dev webpack
 
 これで、webpackを使用する準備が整いました。
 
+#### 3.モジュールを作成する
+```js:index.js
+var hello = require('./hello');
+hello.say();
+```
+
+```js:hello.js
+module.exports = {
+  hello: function() {
+    alert('hello!');
+  }
+};
+
+```
+
 
 
