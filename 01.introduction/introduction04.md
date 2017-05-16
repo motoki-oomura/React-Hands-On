@@ -16,6 +16,20 @@ CSS・javascript・画像などのあらゆるwebコンテンツを「モジュ�
 webpackを使用するためには、まずnpmでwebpackパッケージをインストールします。<br>
 その後webpackパッケージをnode.jsの上で動かします。
 
+今回作業する上での最終的なディレクトリ構成は下記になります。
+
+```
+ProjectRootFolder
+|- package.json
+|- node_modules/
+|- webpack.config.js
+|- src/
+    |- index.js
+    |- hello.js
+    |- say.js
+
+```
+
 #### 1.package.jsonファイルの作成
 webpackを使用するためには、npmでインストールする必要があります。
 そのためには、開発ディレクトリのルート直下で、 `npm init` コマンドを叩きpackage.jsonを作成します。（すでに誰かが環境構築している場合は必要ありません）
@@ -38,19 +52,72 @@ $ npm install --save-dev webpack
 これで、webpackを使用する準備が整いました。
 
 #### 3.モジュールを作成する
-```js:index.js
+webpackを使ってバンドルするためのモジュールを作成します。
+
+エントリポイントと呼ばれるjsファイル（index.js）を１つ作成します。<br>
+その後、index.jsで取り込むための他のファイル（hello.js, bye.js）を作成します。
+
+また、webpackでは読み込みと吐き出しを行うのですが、基本的には読み出しをするところを `srcフォルダ`とし、吐き出す場所を`buildフォルダ`にします。
+
+
+```js
+// /src/index.js
+
 var hello = require('./hello');
 hello.say();
+
+var bye = require('./bye');
+bye.say();
 ```
 
-```js:hello.js
+```js
+// /src/hello.js
+
 module.exports = {
-  hello: function() {
+  say: function() {
     alert('hello!');
   }
 };
 
 ```
 
+```js
+// /src/bye.js
+
+module.exports = {
+  say: function() {
+    alert('bye!');
+  }
+}
+
+```
+
+#### 4.webpackの設定を記述する
+webpackを使用するにはwebpackをつかってどういう風にバンドルするのか・他に何をするのかといった設定ファイルを書かなくてはなりません。<br>
+ここの設定が結構重要だったりします。
+
+開発ディレクトリのルート直下に`webpack.config.js`を作成します。
+
+```js
+// webpack.config.js
+
+var path = require('path');
+var srcDir = path.resolve(__dirname, '/src');
+var buildDir = path.resolve(__dirname, '/build');
+
+// ここでmodule.exportsをしているのはwebpackの決まりだと思ってください
+module.exports = {
+  
+  // どのjsファイルをエントリポイント（最初にwebpackで読み込むかを指定します）
+  entry: srcDir + '/index.js',
+  
+  // どこに吐き出すか、バンドルしたファイル名をどうするかの設定を記述します
+  output: {
+    filename: 'bundle.js',
+    path: buildDir
+  }
+}
+
+```
 
 
