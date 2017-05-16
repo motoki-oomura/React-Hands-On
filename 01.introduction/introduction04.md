@@ -98,6 +98,8 @@ webpackを使用するにはwebpackをつかってどういう風にバンドル
 
 開発ディレクトリのルート直下に`webpack.config.js`を作成します。
 
+[webpackの設定ファイルについてはこちら（公式ドキュメント - 英語）](https://webpack.js.org/configuration/)
+
 ```js
 // webpack.config.js
 
@@ -115,6 +117,18 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: buildDir
+  },
+  
+  // モジュールに関する設定
+  module: {
+    
+    // モジュールのルールを設定します。どのファイルに対して何をするかなど
+    rules: [
+      {
+        // 正規表現でどのファイルかを指定しています。この場合はファイル名の最後が.jsであるファイル 
+        test: /.js$/
+      }
+    ]
   }
 }
 
