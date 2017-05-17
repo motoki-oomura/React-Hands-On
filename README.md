@@ -10,7 +10,7 @@
 - [WIP] Introduction 06: Debug of React Application
 
 ### 02.Lesson
-- [WIP] Lesson 00: set up environment
+- [Lesson 00: 環境構築](02.lesson/lesson00.md)
 - [WIP] Lesson 01: components
 - [WIP] Lesson 02: inline style
 - [WIP] Lesson 03: props
