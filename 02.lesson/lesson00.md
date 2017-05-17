@@ -26,6 +26,7 @@ $ npm init -y
 
 ```
 // 現在のディレクトリ構造
+
 ProjectRoot/
   |- package.json
 ```
@@ -61,6 +62,7 @@ $ npm install --save react react-dom
 
 ```
 // 現在のディレクトリ構造
+
 ProjectRoot/
   |- package.json
   |- node_modules/
@@ -114,14 +116,15 @@ module.exports = {
 // .babelrc
 
 {
-	"presets": [
-		"es2015", "react"
-	]
+  "presets": [
+    "es2015", "react"
+  ]
 }
 ```
 
 ```
 // 現在のディレクトリ構造
+
 ProjectRoot/
   |- package.json
   |- node_modules/
