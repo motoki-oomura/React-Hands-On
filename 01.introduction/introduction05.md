@@ -1,6 +1,5 @@
 # Introduction05
 ## Single Page Applicationとは
-### 概要
 
 - 単一ページで構成されているwebアプリケーション
 - javascriptを用いてコンポーネント（DOM）を切り替える
@@ -12,12 +11,12 @@
 
 近年よくきくSingle Page Application(以下SPA)とは、**１度htmlファイルを受け取った後は、サーバーにリクエストするたびにhtmlファイルではなくデータ（jsonなど）をレスポンスで返し、それをjavascriptを用いてページを表示させていく**方法です。
 
-### 仕組みの違い
-#### webサイト
+## 仕組みの違い
+### webサイト
 
-#### SPA
+### SPA
 
-### SPAのメリット
+## SPAのメリット
 
 
 
