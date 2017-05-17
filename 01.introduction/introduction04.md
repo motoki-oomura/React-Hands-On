@@ -168,5 +168,5 @@ $ npm run build
 bundle.jsの中身をみてみるとwebpackが追記した記述とindex.jsとhello.jsとbye.jsの記述が記載されていることがわかります。
 
 
-<span align="left">[<< Introduction 03: ECMAScript2015について](introduction02.md)</span>
-<span align="right">[Introduction 05: SPAとはなにか >>](introduction04.md)</span>
+<span align="left">[<< Introduction 03: ECMAScript2015について](introduction03.md)</span>
+<span align="right">[Introduction 05: SPAとはなにか >>](introduction05.md)</span>
