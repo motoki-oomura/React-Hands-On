@@ -18,22 +18,22 @@
 作業ディレクトリの名前は場所は好きに作成していただいて構いません。
 
 #### 2.package.jsonの作成
-次にwebpackを使用するために`package.json`を作成します。
+次にnpmパッケージを使用するために`package.json`を作成します。
 
 ```bash
 $ npm init -y
 ```
 
 ```
-// ディレクトリ構造
+// 現在のディレクトリ構造
 ProjectRoot/
   |- package.json
-
 ```
 
 #### 3.パッケージをインストール
-次にnpmを用いてwebpack、またそれに伴うパッケージをインストールします。
-まず５つのパッケージを `--save-dev` でインストールします。
+次にnpmを用いてwebpack、またそれに伴うパッケージをインストールします。<br>
+まず７つのパッケージを `--save-dev` でインストールします。<br>
+※ 開発の際のみに使用するパッケージは基本的に `--save-dev` でインストールします。
 
 - webpack
 - webpack-dev-server
@@ -45,4 +45,23 @@ ProjectRoot/
 
 ```bash
 $ npm install --save-dev webpack webpack-dev-server babel-loader babel-core babel-preset-es2015 babel-preset-react html-webpack-plugin 
+```
+
+次に、２つのパッケージを `--save` でインストールします。<br>
+※ 実際にブラウザで動かして使用するパッケージは基本的に `--save` でインストールします。
+
+- react
+- react-dom
+
+```bash
+$ npm install --save react react-dom
+```
+
+`package.json` をみると、にパッケージのリストが登録されたことが確認できます。
+
+```
+// 現在のディレクトリ構造
+ProjectRoot/
+  |- package.json
+  |- node_modules/
 ```
