@@ -131,3 +131,31 @@ ProjectRoot/
   |- webpack.config.js
   |- .babelrc
 ```
+
+#### 5.npm-scriptsの作成
+いちいち長いコマンドを叩いてやっていくのが大変なため、コマンドエイリアスを作成します。
+`package.json`を開き、scripts部分に下記を追加してください。
+
+```
+{
+  // ...省略
+  
+  {
+    "scripts": {
+      "build": "webpack",
+      "start": "webpack-dev-server" 
+    }
+  }
+   
+  // ...省略
+}
+```
+
+#### 最後に
+これで環境構築が終わり、実際にreactを書く準備ができました。<br>
+次回から、実際にReactを書いていきましょう！
+
+
+<span align="left">[<< Introduction05: Single Page Applicationとは](../01.introduction/introduction05.md)</span>
+<span align="right">[Lesson01: React Component >>](lesson01.md)</span>
+
