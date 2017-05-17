@@ -6,7 +6,7 @@
 - [Introduction 02: Reactを使うために必要な技術](01.introduction/introduction02.md)
 - [Introduction 03: ECMAScript2015について](01.introduction/introduction03.md)
 - [Introduction 04: webpackについて](01.introduction/introduction04.md)
-- [WIP] Introduction 05: Single Page Application
+- [Introduction 05: Single Page Applicationとは](01.introduction/introduction05.md)
 - [WIP] Introduction 06: Debug of React Application
 
 ### 02.Lesson
