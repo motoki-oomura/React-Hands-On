@@ -118,20 +118,55 @@ module.exports = {
     filename: 'bundle.js',
     path: buildDir
   },
-  
-  // モジュールに関する設定
-  module: {
-    
-    // モジュールのルールを設定します。どのファイルに対して何をするかなど
-    rules: [
-      {
-        // 正規表現でどのファイルかを指定しています。この場合はファイル名の最後が.jsであるファイル 
-        test: /.js$/
-      }
-    ]
-  }
 }
 
 ```
 
+#### 5.webpackの実行設定をする
+webpackの設定を記述したら、webpackを実行してみます。
 
+実行するためにはターミナルから下記コマンドを入力すれば実行ができます。
+
+しかし、毎回上記のようなコマンドを打ち込んで実行するのはとても面倒なので、`npm-scripts`を用いてコマンドをエイリアス化（置き換える）します。<br>
+`package.json`を開き `scripts`と書かれた連想配列にコマンドを記述します。
+
+```bash
+// ターミナルから実行するコマンド
+$ ./node_modules/.bin/webpack
+```
+
+```json
+// package.jsonで npm-scriptsを登録
+
+{
+  //...省略
+  
+  "scripts": {
+    "build": "webpack"  // この行を追加
+  }
+  
+  
+  //...省略
+}
+
+```
+
+※ `npm-scripts`で記述した場合、 `./node_modules/.bin/`の部分は省略して記述することができます。
+
+#### 6.webpackを実行・確認する
+
+全ての設定が終わったのでwebpackを実行しましょう！
+
+npm-scriptsを実行させるためには `npm run xxxx` と入力します。<br>
+今回の場合、webpackコマンドを実行させるためには `build` を指定する必要があるので、下記コマンドを入力しましょう。
+
+```bash
+$ npm run build
+```
+
+上記コマンドを入力すると、buildフォルダが生成されその中にbundle.jsが生成されてます。<br>
+bundle.jsの中身をみてみるとwebpackが追記した記述とindex.jsとhello.jsとbye.jsの記述が記載されていることがわかります。
+
+
+<span align="left">[<< Introduction 03: ECMAScript2015について](introduction02.md)</span>
+<span align="right">[Introduction 05: SPAとはなにか >>](introduction04.md)</span>
