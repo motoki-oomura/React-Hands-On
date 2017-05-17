@@ -65,3 +65,66 @@ ProjectRoot/
   |- package.json
   |- node_modules/
 ```
+
+#### 4.webpackの設定ファイルを作成
+今回のlessonで書いたコードをコンパイルやバンドルしたりするために、webpackを使用します。<br>
+そのためにプロジェクトルート直下に `webpack.config.js` を作成します。
+
+```js
+// webpack.config.js
+
+var path = require('path'),
+    HtmlWebpackPlugin = require('html-webpack-plugin');
+var srcDir = path.resolve(__dirname, '/src'),
+    buildDir = path.resolve(__dirname, '/build');
+
+module.exports = {
+  entry: srcDir + '/index.js',
+  output: {
+    path: buildDir,
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        use: 'babel-loader',
+        exclude: /node_modules/
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: srcDir + '/index.html',
+      filename: 'index.html',
+      
+    })
+  ]
+}
+
+```
+
+次に、 `babel-loader`を動かすための設定ファイルを作成します。
+プロジェクトルート直下に `.babelrc` ファイルを作成します。
+
+```json
+// .babelrc
+
+{
+	"presets": [
+		"es2015", "react"
+	]
+}
+```
+
+```
+// 現在のディレクトリ構造
+ProjectRoot/
+  |- package.json
+  |- node_modules/
+  |- webpack.config.js
+  |- .babelrc
+```
