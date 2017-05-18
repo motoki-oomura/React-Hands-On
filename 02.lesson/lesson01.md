@@ -80,3 +80,9 @@ $ npm run build
 
 
 ### React Componentの種類
+React Componentを作成するためにはいくつかの方法があります。
+
+- 
+- 
+- 
+- Stateless function component 
