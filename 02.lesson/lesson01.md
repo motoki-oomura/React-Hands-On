@@ -39,16 +39,12 @@ reactでは作成したコンポーネントをjavascriptを使って展開し�
 ```jsx harmony
 // lesson01.jsx
 
-// import文はnpmパッケージでインストールした `react` `react-dom`モジュールを使うために呼び出してます
- import React from 'react';
- import { render } from 'react-dom';
-
 // AppというComponentの定義をしてます
 const App = () => (
   <div>Hello, React!</div>
 );
 
-
+// 作成したApp Componentを他のファイルで使えるようにするためにはexportしてます
 export default App;
 ```
 
@@ -58,6 +54,7 @@ React Componentを作成したあと、それをwebpackでバンドルさせる�
 ```jsx harmony
 // index.js
 
+// import文はnpmパッケージでインストールした `react` `react-dom`モジュールを使うために呼び出してます
 import React from 'react';
 import { render } from 'react-dom';
 
@@ -82,4 +79,4 @@ $ npm run build
 ブラウザに `Hello, React!`と表示されていれば成功です。
 
 
-#### React Componentの種類
+### React Componentの種類
