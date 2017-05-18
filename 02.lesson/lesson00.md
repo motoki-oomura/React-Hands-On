@@ -150,6 +150,26 @@ ProjectRoot/
 }
 ```
 
+#### 6.開発用ディレクトリの作成
+コンパイルやバンドルする前の実際に開発を行なっていくところのフォルダを作成します。<br>
+プロジェクトルート直下に `src` フォルダを作成し、さらにwebpackのエントリポイントである `index.js` と `index.html` を作成してください。
+
+```
+// 現在のディレクトリ構造
+
+ProjectRoot/
+  |- package.json
+  |- node_modules/
+  |- webpack.config.js
+  |- .babelrc
+  |- src/
+      |- index.html
+      |- index.js
+```
+
+webpackの設定ファイルでは `src` フォルダの中身を見て、そこから `build` フォルダを作成しそこにバンドルしたものを吐き出す設定になってます。
+
+
 #### 最後に
 これで環境構築が終わり、実際にreactを書く準備ができました。<br>
 次回から、実際にReactを書いていきましょう！
