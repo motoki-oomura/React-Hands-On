@@ -101,8 +101,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: srcDir + '/index.html',
-      filename: 'index.html',
-      
+      filename: 'index.html'
     })
   ]
 }
@@ -143,7 +142,7 @@ ProjectRoot/
   {
     "scripts": {
       "build": "webpack",
-      "start": "webpack-dev-server" 
+      "start": "webpack-dev-server"
     }
   }
    
