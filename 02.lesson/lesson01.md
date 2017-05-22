@@ -5,6 +5,10 @@ Reactはコンポーネント指向のライブラリです。<br>
 
 コンポーネントは役割に応じていくつかの方法で定義することができます。<br>
 
+参考URL：
+- [協働のためのUIコンポーネント指向とエンジニアリングの前知識](https://m.axross.io/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Bui%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88%E6%8C%87%E5%90%91%E3%81%AE%E8%80%83%E3%81%88%E6%96%B9%E3%81%A8%E5%8D%94%E5%83%8D%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-2c3dbca01ab9)
+
+
 ### はじめてのコンポーネント作成
 まずはじめに、実際に簡単なコンポーネントを作成してみましょう。
 
@@ -22,7 +26,7 @@ reactでは作成したコンポーネントをjavascriptを使って展開し�
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>React Hands On</title>
 </head>
 <body>
   <!--Reactのコンポーネントを展開するために、下記要素を記載-->
@@ -64,7 +68,6 @@ import App from './src/lesson/lesson01';
 
 // 定義したComponentを id="app" のDOMに当てはめてます
 render(<App/>, document.getElementById('app'));
-
 ```
 
 #### 4.buildする
@@ -82,7 +85,45 @@ $ npm run build
 ### React Componentの種類
 React Componentを作成するためにはいくつかの方法があります。
 
-- 
-- 
-- 
+- React.createClass
+- React.Component
 - Stateless function component 
+
+#### React.createClass
+`React.createClass` は主にES5記法で用いられる書き方です。
+```jsx harmony
+var Component = React.createClass({
+  render: function() {
+    return (
+      <div>this is component</div>
+    );
+  }
+});
+```
+
+#### React.Component
+`React.Component` はECMAScript2015記法で用いられる書き方です。<br>
+基本開発するときはECMAScript2015で開発することがほとんどなので `createClass`よりこちらを使用することがほとんです。
+```jsx harmony
+class Component extends React.Component {
+  render() {
+    return (
+      <div>this is component</div>
+    );
+  }
+}
+```
+
+
+#### Stateless function components（SFC）
+さきほど作成したReact ComponentはこのSFCで作成しました。<br>
+SFCはReactのState（状態）を保持しないコンポーネントです。<br>
+コンポーネントを作成するときはStateを必要としない限りはSFCでコンポーネントを作成しましょう。<br>
+※ stateについては別のLessonにて説明します。
+```jsx harmony
+const Component = () => {
+  return (
+    <div>this is component</div>
+  );
+}
+```
