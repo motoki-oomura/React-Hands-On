@@ -90,7 +90,9 @@ React Componentを作成するためにはいくつかの方法があります�
 - Stateless function component 
 
 #### React.createClass
-`React.createClass` は主にES5記法で用いられる書き方です。
+`React.createClass` は主にES5記法で用いられる書き方です。<br>
+またこちらの書き方に関しては現在、React開発サイドが非推奨としているため、使わない方がいいです。
+
 ```jsx harmony
 var Component = React.createClass({
   render: function() {
