@@ -1,5 +1,5 @@
 # Lesson01
-## React Component
+## コンポーネント
 Reactはコンポーネント指向のライブラリです。<br>
 コンポーネント単位でUIの部品を作成し、それを組み合わせてwebアプリケーションを構築していきます。<br>
 
@@ -129,3 +129,6 @@ const Component = () => {
   );
 }
 ```
+
+<span align="left">[<< Lesson00: 環境構築](lesson00.md)</span>
+<span align="right">[Lesson01: React Component >>](lesson02.md)</span>
