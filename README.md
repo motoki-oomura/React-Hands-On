@@ -11,8 +11,8 @@
 
 ### 02.Lesson
 - [Lesson 00: 環境構築](02.lesson/lesson00.md)
-- [Lesson 01: コンポーネント](02.lesson/lesson01.md)
-- [Lesson 02: インラインスタイル](02.lesson/lesson02.md)
+- [Lesson 01: Reactコンポーネントを作成しよう](02.lesson/lesson01.md)
+- [Lesson 02: コンポーネントにスタイルをあてよう](02.lesson/lesson02.md)
 - [WIP] Lesson 03: props
 - [WIP] Lesson 04: create component from array
 - [WIP] Lesson 05: create form

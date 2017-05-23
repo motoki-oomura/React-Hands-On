@@ -1,5 +1,5 @@
 # Lesson02
-## スタイル
+## コンポーネントにスタイルをあてよう
 HTMLにCSSでスタイルを付与するように、Reactでも作成したコンポーネントにCSSスタイルを付与することができます。<br>
 従来通り、CSSをclass名で指定することも可能ですが、「ファイルが分かれてしまうこと(jsx, css)」「命名が衝突する問題」などがあることから、コンポーネント指向では必ずしもいい方法とは言えなくなっています。
 
@@ -70,5 +70,5 @@ const Hello = () => (
 
 
 
-<span align="left">[<< Lesson00: コンポーネント](lesson01.md)</span>
+<span align="left">[<< Lesson00: Reactコンポーネントを作成しよう](lesson01.md)</span>
 <span align="right">[ >>](lesson03.md)</span>

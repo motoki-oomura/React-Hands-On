@@ -176,5 +176,5 @@ webpackの設定ファイルでは `src` フォルダの中身を見て、そこ
 
 
 <span align="left">[<< Introduction05: Single Page Applicationとは](../01.introduction/introduction05.md)</span>
-<span align="right">[Lesson01: React Component >>](lesson01.md)</span>
+<span align="right">[Lesson01: Reactコンポーネントを作成しよう >>](lesson01.md)</span>
 

@@ -35,7 +35,7 @@ reactでは作成したコンポーネントをjavascriptを使って展開し�
 </html>
 ```
 
-#### 2.React Componentの作成
+#### 2.Reactコンポーネントを作成しよう
 次にコンポーネントを作成するためのjsを作成します。<br>
 まず `src/lesson/lesson01.jsx` を作成します。<br>
 ※ jsx拡張子はReactでよく使われる拡張子です。
