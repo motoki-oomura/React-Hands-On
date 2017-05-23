@@ -1,5 +1,5 @@
 # Lesson01
-## React Component
+## Reactコンポーネントを作成しよう
 Reactはコンポーネント指向のライブラリです。<br>
 コンポーネント単位でUIの部品を作成し、それを組み合わせてwebアプリケーションを構築していきます。<br>
 
@@ -35,7 +35,7 @@ reactでは作成したコンポーネントをjavascriptを使って展開し�
 </html>
 ```
 
-#### 2.React Componentの作成
+#### 2.コンポーネントの作成
 次にコンポーネントを作成するためのjsを作成します。<br>
 まず `src/lesson/lesson01.jsx` を作成します。<br>
 ※ jsx拡張子はReactでよく使われる拡張子です。
@@ -129,3 +129,6 @@ const Component = () => {
   );
 }
 ```
+
+<span align="left">[<< Lesson00: 環境構築](lesson00.md)</span>
+<span align="right">[Lesson01: React Component >>](lesson02.md)</span>
